@@ -1,6 +1,6 @@
-# Fencing AI Datasets
+# Touché
 
-Last researched: **June 20, 2026**.
+Last researched: **June 20, 2026**. Items are listed in order from *strongest/most likely to contribute to research* to the *weakest/least likely to contribute to research*.
 
 A list of public datasets and dataset-like resources for AI, machine learning, computer vision, pose estimation, action recognition, match analytics, rankings, and referee-assistance work for the Olympic sport of fencing. Resources only need to be publicly visible to be listed, but weakly documented or non-downloadable entries are labeled clearly. If you find a new dataset, a working download link, or updated release status for an unverified item, please update the repository.
 
@@ -42,13 +42,6 @@ Status tags:
 12. [samasas/fencing](https://www.kaggle.com/datasets/samasas/fencing): **Low documentation.** Approximately 18 KB and marked Apache-2.0, but has no public description or schema. Inspect files before listing it as substantive data.
 13. [rongdianzhu/fencing](https://www.kaggle.com/datasets/rongdianzhu/fencing): **Low documentation.** Approximately 2 KB with no description and an unknown license. Publicly visible, but not currently useful without manual inspection.
 
-## General AI datasets containing fencing-related classes
-
-1. [UCF101](https://www.crcv.ucf.edu/data/UCF101.php): **General dataset.** Public action-recognition benchmark with 13,320 YouTube videos across 101 classes, including a dedicated `Fencing` class. Useful for pretraining or baseline fencing-action recognition, although the clips are coarse action labels rather than referee-decision labels.
-2. [HMDB51](https://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/): **General dataset.** Human-motion benchmark containing `fencing`, `draw_sword`, `sword`, and `sword_exercise` classes. Useful for transfer learning and robustness to movie-like footage; only the `fencing` class is directly sport-specific.
-3. [Sports Image - Image Classification](https://www.kaggle.com/datasets/sheikhzaib/sports-image-image-classification): **General dataset.** CC0 image dataset with 22 sport folders, including fencing. Useful for sport-scene classification or sourcing generic fencing images, but not for temporal action understanding.
-4. [Kinetics / I3D labels](https://github.com/google-deepmind/kinetics-i3d): **General dataset.** Kinetics-400 includes a `sword fighting` class rather than a dedicated sport-fencing label. It is only loosely related, but may help transfer learning for two-person weapon motion.
-
 ## Benchmarks and research releases
 
 1. [FACTS - Fine-Grained Action Classification for Tactical Sports](https://arxiv.org/abs/2412.16454): **Benchmark / paper release.** Introduces a fencing and boxing benchmark. The fencing portion is described as 6,400 final clips from 13,459 annotated Quarte Riposte clips, using eight labels: attack, riposte, counter-attack, and remise for left and right. The paper says data are public, but no standalone download URL was found in the arXiv metadata or indexed results.
@@ -69,13 +62,12 @@ Status tags:
 9. [Saber Referee Assistant](https://github.com/LeJamon/saber-referee): **Code / asset data.** End-to-end pose/blade/event/right-of-way pipeline with 13 small JSON phrase fixtures covering calls such as parry-riposte, simultaneous, point-in-line, and low-confidence abstention. Fixtures are synthetic tests, but they are useful for validating rule engines.
 10. [FencingMaestro](https://github.com/cinastanbean/FencingMaestro): **Code / pipeline.** Public video-analysis GUI and motion-analysis scaffold. Action-recognition training remains roadmap work and no dataset is bundled.
 
-## Public placeholders, model artifacts, and 3D assets
+## General AI datasets containing fencing-related classes
 
-1. [Log45/fencing-score-box-detection](https://huggingface.co/datasets/Log45/fencing-score-box-detection): **Placeholder.** Public MIT dataset card containing only a README and no data files.
-2. [Log45/fencing-pose-classification](https://huggingface.co/datasets/Log45/fencing-pose-classification): **Placeholder.** Public MIT dataset card containing only a README and no data files.
-3. [FencingRecognitionModel](https://www.kaggle.com/datasets/tempest7812/fencingrecognitionmodel): **Model artifact / placeholder.** MIT entry of only about 162 bytes; not a useful training dataset by itself.
-4. [fencingtrainedmodel1](https://www.kaggle.com/datasets/tempest7812/fencingtrainedmodel1): **Model artifact.** Approximately 39 MB and marked MIT, but it is a trained model rather than source data and has no meaningful public documentation.
-5. [Fencing Mask 3D model](https://zenodo.org/records/10217288): **Asset.** Public GLB model and reference images of a historical fencing mask. Useful for equipment visualization, synthetic rendering, or 3D asset experiments, not action recognition.
+1. [UCF101](https://www.crcv.ucf.edu/data/UCF101.php): **General dataset.** Public action-recognition benchmark with 13,320 YouTube videos across 101 classes, including a dedicated `Fencing` class. Useful for pretraining or baseline fencing-action recognition, although the clips are coarse action labels rather than referee-decision labels.
+2. [HMDB51](https://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/): **General dataset.** Human-motion benchmark containing `fencing`, `draw_sword`, `sword`, and `sword_exercise` classes. Useful for transfer learning and robustness to movie-like footage; only the `fencing` class is directly sport-specific.
+3. [Sports Image - Image Classification](https://www.kaggle.com/datasets/sheikhzaib/sports-image-image-classification): **General dataset.** CC0 image dataset with 22 sport folders, including fencing. Useful for sport-scene classification or sourcing generic fencing images, but not for temporal action understanding.
+4. [Kinetics / I3D labels](https://github.com/google-deepmind/kinetics-i3d): **General dataset.** Kinetics-400 includes a `sword fighting` class rather than a dedicated sport-fencing label. It is only loosely related, but may help transfer learning for two-person weapon motion.
 
 ## Notes for contributors
 
